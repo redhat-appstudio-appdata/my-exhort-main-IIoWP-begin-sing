@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: exhort-lz2u
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/bmozaffari-gps-jboss-tenant/my-exhort-main/exhort-lz2u@sha256:6181fdef0c6530c15c55b158d52a22b65186b091d942ec983a578c42a83ab549
+        name: my-java-quarkus
+        resources: {}
+status: {}
